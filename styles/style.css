@@ -87,7 +87,7 @@ a {
 #content {
   float: left;
   width: 590px;
-  padding-left: 160px;
+  padding-left: 170px;
   font-family: "Open Sans", sans-serif;
   color: #545F66;
 }
@@ -100,6 +100,27 @@ a {
   margin-top: 55px;
   margin-bottom: 5px;
   font-weight: bold;
+}
+.button {
+  display: inline;
+  padding-right: 20px;
+}
+.buttons_img {
+  background-color: #777;
+  width: 16px;
+  height: 15px;
+  padding: 8px;
+  margin-bottom: -11px;
+  margin-right: -4px;
+}
+.buttons_text {
+  width: 90px;
+  height: 15px;
+  background-color: #ccc;
+  color: #FFF;
+  font-size: 12px;
+  display: inline;
+  padding: 7px 20px;
 }
 #content p {
   margin: 15px 0 15px 0;
@@ -187,16 +208,22 @@ a {
 }
 .overlay {
   background-color: #196EB1;
-  width: auto;
+  width: 325px;
+  height: 330px;
+  position: relative;
+  opacity: 0.5;
+  float: left;
 }
-#posts img:hover {
-  opacity: 80%;
+.overlay:hover {
+  opacity: 1;
+  position: relative;
 }
+
 #posts img {
   width: 325px;
   height: 330px;
   float: left;
-  background-color: #196EB1;
+  position: relative;
 }
 #posts h3 {
   font-size: 40px;
@@ -220,7 +247,6 @@ a {
   text-align: center;
   padding: 10px 0;
   font-family: "Asap", sans-serif;
-  margin: -5px 0 0 0;
 }
 .footer_container {
   padding: 20px 80px;
