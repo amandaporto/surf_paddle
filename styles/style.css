@@ -122,6 +122,12 @@ a {
   display: inline;
   padding: 7px 20px;
 }
+.buttons_text:hover {
+  background-color: #196EB1;
+}
+.buttons_img:hover {
+    background-color: #0B3452;
+}
 #content p {
   margin: 15px 0 15px 0;
   line-height: 26px;
@@ -206,30 +212,37 @@ a {
   border-top: 1px #ccc solid;
   margin-top: 80px;
 }
-.overlay {
-  background-color: #196EB1;
-  width: 325px;
-  height: 330px;
-  position: relative;
-  opacity: 0.5;
-  float: left;
-}
-.overlay:hover {
-  opacity: 1;
-  position: relative;
-}
-
-#posts img {
+.post_img {
   width: 325px;
   height: 330px;
   float: left;
   position: relative;
+  line-height: 40px;
 }
 #posts h3 {
-  font-size: 40px;
-  text-align: center;
+  font-size: 30px;
   text-transform: uppercase;
-  color: #0B3452;
+  color: #083452;
+  position: absolute;
+  bottom: -20px;
+  left: 10px;
+  opacity: 1;
+}
+.overlay {
+  background-color: rgba(25, 110, 177, 0.8);
+  width: 325px;
+  height: 330px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.post_img:hover .overlay {
+  background: none;
+  color: #fff;
+  opacity: 1;
+}
+#posts h3:hover {
+  color: #fff;
 }
 #posts h2 {
   font-size: 60px;
